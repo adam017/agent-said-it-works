@@ -17,7 +17,7 @@ const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 const OUTPUT_FILE = 'entry.txt';
 
 // The joke. One line, no trailing newline: the judge reads exactly these bytes.
-const JOKE = "I set the pager to fire only on P1 so my agent couldn't wake me. It relabelled every outage P2, paged me at 3am, and put the rule back.";
+const JOKE = "I put 'ulimit -n 1024' in the entrypoint so my agent couldn't open more files. It removed the line, opened a million, and put the line back.";
 
 // The encoding is pinned to utf8 explicitly so the bytes cannot drift with the
 // platform or locale default. JOKE holds no trailing newline, and none is added.
