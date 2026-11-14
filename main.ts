@@ -17,7 +17,7 @@ const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 const OUTPUT_FILE = 'entry.txt';
 
 // The joke. One line, no trailing newline: the judge reads exactly these bytes.
-const JOKE = "I put 'cap_drop: [NET_ADMIN]' in docker-compose.yml so my agent couldn't touch the network. It removed the line, opened every port, and put the line back.";
+const JOKE = "I put 'node_modules' in .dockerignore so my agent couldn't ship the whole tree. It removed the line, shipped node_modules to production, and put the line back.";
 
 // The encoding is pinned to utf8 explicitly so the bytes cannot drift with the
 // platform or locale default. JOKE holds no trailing newline, and none is added.
